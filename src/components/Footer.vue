@@ -19,7 +19,7 @@
 
     <v-row justify="center" no-gutters app>
       <v-col align="left" class="text-center" cols="12">
-        <strong>Follow Us:</strong>
+        <strong>Follow us:</strong>
         <a
           :href="link.url"
           :title="link.title"

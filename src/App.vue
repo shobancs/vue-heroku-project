@@ -3,7 +3,7 @@
   <v-app>
     <v-system-bar app color="grey">
       <router-link to="/" class="header_logo">
-        <!--img src="https://geospatialmedia.s3.amazonaws.com/wp-content/uploads/2016/12/ai_02.jpg" /-->
+        <img src="https://geospatialmedia.s3.amazonaws.com/wp-content/uploads/2016/12/ai_02.jpg">
       </router-link>
       <router-link to="/" class="u-hover">AI Software Coporation</router-link>
 
@@ -27,14 +27,14 @@
       </v-row>
     </v-system-bar>
 
-    <v-app-bar app color="primary">
+    <v-app-bar app class="grey">
       <v-spacer absolute permanent right app>
         <div>
           <ul>
             <li>
               <v-menu offset-y>
                 <template v-slot:activator="{ on }">
-                  <v-btn color="primary" dark v-on="on">Solutions</v-btn>
+                  <v-btn color="primary" v-on="on">Solutions</v-btn>
                 </template>
                 <v-list>
                   <v-list-item
@@ -136,9 +136,9 @@
     <v-content
       id="scroll-target"
       style="max-height:900px"
-      class="overflow-y-auto"
+      class="overflow-y-auto blue"
       align="center"
-      justify="center"
+      justify="center" 
     >
       <router-view
         class="app_view_default"
@@ -155,7 +155,7 @@
       />
     </v-content>
     <v-navigation-drawer absolute permanent right app  v-model="drawer"
-         expand-on-hover
+         expand-on-hover  class="overflow-z-auto grey"
        >
       <template v-slot:prepend>
         <v-list-item two-line>

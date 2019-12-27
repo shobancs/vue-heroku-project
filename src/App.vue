@@ -136,7 +136,7 @@
     <v-content
       id="scroll-target"
       style="max-height:900px"
-      class="overflow-y-auto blue"
+      class="overflow-y-auto "
       align="center"
       justify="center" 
     >

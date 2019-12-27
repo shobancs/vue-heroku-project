@@ -15,9 +15,17 @@
 
       <v-flex mb-4>
         <h2 class="font-weight-bold mb-3">
-          Welcome to AI Software Labs!!
+          Welcome to AI Software Labs!
         </h2>
+        <h3>
+          BENEFITS & RISKS OF ARTIFICIAL INTELLIGENCE
+</h3>
+          <p>“Everything we love about civilization is a product of intelligence, so amplifying our human intelligence with artificial intelligence has the potential of helping civilization flourish like never before – as long as we manage to keep the technology beneficial.“
+</p>
         
+        <p>
+          Step into the shoes of a scientist at the cutting edge...
+        </p>
       </v-flex>
 
     
@@ -25,19 +33,7 @@
         xs12
         mb-5
       >
-        <h2 class="headline font-weight-bold mb-3">Important Links</h2>
-
-        <v-layout justify-center>
-          <a
-            v-for="(link, i) in importantLinks"
-            :key="i"
-            :href="link.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ link.text }}
-          </a>
-        </v-layout>
+       
       </v-flex>
 
       <v-flex

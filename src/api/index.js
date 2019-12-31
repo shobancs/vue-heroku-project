@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const API = process.env.BASE_URL + 'api.json'
-
+console.log(API)
 export default {
   getApiData () {
     return new Promise((resolve, reject) => {

@@ -40,21 +40,21 @@
         xs12
         mb-5
       >
-        <h2 class="headline font-weight-bold mb-3">Ecosystem</h2>
+       
 
-        <v-layout justify-center>
-          <a
-            v-for="(eco, i) in ecosystem"
-            :key="i"
-            :href="eco.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ eco.text }}
-          </a>
-        </v-layout>
+       
       </v-flex>
     </v-layout>
+    
+ 
+ 
+ <h2 class="headline font-weight-bold mb-3"> The Age of A.I.</h2>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/UwsrzCVZAb8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <v-divider/>
+     <iframe id="ytplayer" type="text/html" width="640" height="360"
+  src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com"
+  frameborder="0"></iframe>
   </v-container>
 </template>
 

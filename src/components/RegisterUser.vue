@@ -1,7 +1,7 @@
 <template app>
   <v-dialog v-model="dialog" persistent max-width="600px">
     <template v-slot:activator="{ on }">
-      <v-btn color="primary" rounded v-on="on">Register</v-btn>
+      <v-btn class="black white--text" rounded v-on="on">Register</v-btn>
     </template>
     <v-card>
       <v-btn icon @click="dialog = false">

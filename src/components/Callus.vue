@@ -1,8 +1,12 @@
 <template app>
   <v-dialog v-model="dialog" persistent max-width="600px">
-    <template v-slot:activator="{ on }">
-      <slot>Call us</slot>
-      <v-icon v-on="on">mdi-phone-forward</v-icon>
+    <template v-slot:activator="{ on }" class="v-list-item v-list-item--link theme--light">
+     
+       <v-list-item-icon class="v-list-item v-list-item--link theme--light">
+            <v-icon v-on="on">mdi-phone-forward</v-icon>
+          </v-list-item-icon>
+
+        
     </template>
     <v-card>
       <v-btn icon @click="dialog = false">

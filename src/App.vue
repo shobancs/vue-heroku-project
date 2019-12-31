@@ -1,40 +1,23 @@
 
 <template>
-  <v-app>
-    <v-system-bar app color="grey">
-      <router-link to="/" class="header_logo">
+  <v-app >
+    
+
+    <v-app-bar app class="black">
+      <v-spacer>
+        <router-link to="/" class="header_logo">
         <img src="https://geospatialmedia.s3.amazonaws.com/wp-content/uploads/2016/12/ai_02.jpg">
       </router-link>
-      <router-link to="/" class="u-hover">AI Software Coporation</router-link>
+      <router-link to="/" class="u-hover">AI Software Corporation</router-link>
 
-      <v-spacer></v-spacer>
-
-      <v-row justify="right">
-        <v-col md="auto">
-          <Callus />
-        </v-col>
-        <v-col>
-          <Emailus />
-        </v-col>
-      </v-row>
-      <v-row justify="left">
-        <v-col md="auto">
-          <RegisterUser />
-        </v-col>
-        <v-col>
-          <Login />
-        </v-col>
-      </v-row>
-    </v-system-bar>
-
-    <v-app-bar app class="grey">
-      <v-spacer absolute permanent right app>
-        <div>
+      </v-spacer>
+      <v-spacer absolute permanent right app dark class="black">
+        <div class="black"> 
           <ul>
             <li>
               <v-menu offset-y>
                 <template v-slot:activator="{ on }">
-                  <v-btn color="primary" v-on="on">Solutions</v-btn>
+                  <v-btn class="black white--text" v-on="on">Solutions</v-btn>
                 </template>
                 <v-list>
                   <v-list-item
@@ -50,7 +33,7 @@
             <li>
               <v-menu offset-y>
                 <template v-slot:activator="{ on }">
-                  <v-btn color="primary" dark v-on="on">Services</v-btn>
+                  <v-btn class="black white--text" v-on="on">Services</v-btn>
                 </template>
                 <v-list>
                   <v-list-item v-for="(item, index) in service_items" :key="index" :to="item.page">
@@ -62,7 +45,7 @@
             <li>
               <v-menu offset-y>
                 <template v-slot:activator="{ on }">
-                  <v-btn color="primary" dark v-on="on">Platforms</v-btn>
+                  <v-btn class="black white--text" v-on="on">Platforms</v-btn>
                 </template>
                 <v-list>
                   <v-list-item v-for="(item, index) in platform_items" :key="index" :to="item.page">
@@ -74,7 +57,7 @@
             <li>
               <v-menu offset-y>
                 <template v-slot:activator="{ on }">
-                  <v-btn color="primary" dark v-on="on">Resources</v-btn>
+                  <v-btn class="black white--text" v-on="on">Resources</v-btn>
                 </template>
                 <v-list>
                   <v-list-item v-for="(item, index) in resource_items" :key="index" :to="item.page">
@@ -86,7 +69,7 @@
             <li>
               <v-menu offset-y>
                 <template v-slot:activator="{ on }">
-                  <v-btn color="primary" dark v-on="on">Trainings</v-btn>
+                  <v-btn class="black white--text" v-on="on">Trainings</v-btn>
                 </template>
                 <v-list>
                   <v-list-item v-for="(item, index) in training_items" :key="index" :to="item.page">
@@ -98,7 +81,7 @@
             <li>
               <v-menu offset-y>
                 <template v-slot:activator="{ on }">
-                  <v-btn color="primary" dark v-on="on">Partners</v-btn>
+                  <v-btn class="black white--text" v-on="on">Partners</v-btn>
                 </template>
                 <v-list>
                   <v-list-item v-for="(item, index) in partner_items" :key="index" :to="item.page">
@@ -110,7 +93,7 @@
             <li>
               <v-menu offset-y>
                 <template v-slot:activator="{ on }">
-                  <v-btn color="primary" dark v-on="on">About</v-btn>
+                  <v-btn class="black white--text" v-on="on">About</v-btn>
                 </template>
                 <v-list>
                   <v-list-item v-for="(item, index) in about_items" :key="index" :to="item.page">
@@ -122,13 +105,22 @@
           </ul>
         </div>
       </v-spacer>
-
+      <v-spacer>
+        <v-row justify="left">
+        <v-col md="auto">
+          <RegisterUser />
+        </v-col>
+        <v-col>
+          <Login />
+        </v-col>
+      </v-row>
+      </v-spacer>
       <v-btn
         href="https://github.com/AI-Software-Solutions/vuejs-samples/tree/master/ai-layout"
         target="_blank"
         text
       >
-        <span class="mr-2">Code base</span>
+        <span class="mr-2 white--text">Code base</span>
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
     </v-app-bar>
@@ -173,7 +165,7 @@
       <v-divider></v-divider>
 
       <v-list dense>  
-        <v-list-item v-for="item in items" :key="item.title" :to="item.page">
+        <v-list-item v-for="item in user_items" :key="item.title" :to="item.page">
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-icon>
@@ -183,6 +175,15 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
+      <v-divider></v-divider>
+      <v-row justify="right" no-gutters app>
+         <Callus />
+      </v-row>
+     <v-row justify="right" no-gutters app>
+   
+          <Emailus />
+       
+      </v-row>
       <v-divider></v-divider>
     </v-navigation-drawer>
 
@@ -257,7 +258,7 @@ export default {
       { title: "Events", page: "" },
       { title: "Technical Blog", page: "" }
     ],
-    items: [
+    user_items: [
       { title: "Home", icon: "mdi-home-city", page: "/"},
       { title: "My Account", icon: "mdi-account",page: "GilbertCook/profile" },
       { title: "Users", icon: "mdi-account-group-outline" ,page: "/Users"}

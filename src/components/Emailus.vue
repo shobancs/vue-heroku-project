@@ -1,8 +1,11 @@
 <template app>
   <v-dialog v-model="dialog" persistent max-width="600px">
     <template v-slot:activator="{ on }">
-      <v-icon v-on="on">mdi-email-box</v-icon>
-      <slot>Email us</slot>
+    
+      <v-list-item-icon class="v-list-item v-list-item--link theme--light">
+            <v-icon v-on="on">mdi-email-box</v-icon>
+          </v-list-item-icon>
+
     </template>
     <v-card tile>
       <v-btn icon @click="dialog = false">

@@ -7,13 +7,14 @@
           :key="link.title"
           text
           rounded
-          class="grey"
+          small
+          class="grey white--text"
           :href="link.page"
           link="true"
         >{{ link.title }}</v-btn>
-        <strong>©</strong>
-        {{ new Date().getFullYear() }} —
-        <strong>Copyright: AI Software Corporation.</strong>
+        
+        <strong small class="grey white--text" >© {{ new Date().getFullYear() }} -</strong>
+        <strong small class="grey white--text small">Copyright: AI Software Corporation.</strong>
       </v-col>
     </v-row>
 

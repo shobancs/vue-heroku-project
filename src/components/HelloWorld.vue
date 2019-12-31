@@ -4,19 +4,13 @@
       text-center
       wrap
     >
-      <v-flex xs12>
-        <v-img
-          :src="require('../assets/ai-logo-1.png')"
-          class="my-3"
-          contain
-          height="200"
-        ></v-img>
-      </v-flex>
+    
 
       <v-flex mb-4>
         <h2 class="font-weight-bold mb-3">
           Welcome to AI Software Labs!
         </h2>
+        <br>
         <h3>
           BENEFITS & RISKS OF ARTIFICIAL INTELLIGENCE
 </h3>

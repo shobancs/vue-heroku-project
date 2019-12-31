@@ -13,7 +13,7 @@
           link="true"
         >{{ link.title }}</v-btn>
         
-        <strong small class="grey white--text" >© {{ new Date().getFullYear() }} -</strong>
+        <strong small class="grey white--text" >© {{ new Date().getFullYear() }} - </strong>
         <strong small class="grey white--text small">Copyright: AI Software Corporation.</strong>
       </v-col>
     </v-row>

@@ -15,7 +15,7 @@
         <div class="black"> 
           <ul>
             <li>
-              <v-menu offset-y>
+              <v-menu  open-on-hover bottom offset-y>
                 <template v-slot:activator="{ on }">
                   <v-btn class="black white--text" v-on="on">Solutions</v-btn>
                 </template>
@@ -31,7 +31,7 @@
               </v-menu>
             </li>
             <li>
-              <v-menu offset-y>
+              <v-menu open-on-hover bottom offset-y>
                 <template v-slot:activator="{ on }">
                   <v-btn class="black white--text" v-on="on">Services</v-btn>
                 </template>
@@ -43,7 +43,7 @@
               </v-menu>
             </li>
             <li>
-              <v-menu offset-y>
+              <v-menu open-on-hover bottom offset-y>
                 <template v-slot:activator="{ on }">
                   <v-btn class="black white--text" v-on="on">Platforms</v-btn>
                 </template>
@@ -55,7 +55,7 @@
               </v-menu>
             </li>
             <li>
-              <v-menu offset-y>
+              <v-menu open-on-hover bottom offset-y>
                 <template v-slot:activator="{ on }">
                   <v-btn class="black white--text" v-on="on">Resources</v-btn>
                 </template>
@@ -67,7 +67,7 @@
               </v-menu>
             </li>
             <li>
-              <v-menu offset-y>
+              <v-menu open-on-hover bottom offset-y>
                 <template v-slot:activator="{ on }">
                   <v-btn class="black white--text" v-on="on">Trainings</v-btn>
                 </template>
@@ -79,7 +79,7 @@
               </v-menu>
             </li>
             <li>
-              <v-menu offset-y>
+              <v-menu open-on-hover bottom offset-y>
                 <template v-slot:activator="{ on }">
                   <v-btn class="black white--text" v-on="on">Partners</v-btn>
                 </template>
@@ -91,7 +91,7 @@
               </v-menu>
             </li>
             <li>
-              <v-menu offset-y>
+              <v-menu open-on-hover bottom offset-y>
                 <template v-slot:activator="{ on }">
                   <v-btn class="black white--text" v-on="on">About</v-btn>
                 </template>
@@ -109,9 +109,10 @@
         <v-row justify="left">
         <v-col md="auto">
           <RegisterUser />
+           <Login />
         </v-col>
         <v-col>
-          <Login />
+         
         </v-col>
       </v-row>
       </v-spacer>

@@ -3,15 +3,16 @@
   <v-app >
     
 
-    <v-app-bar app class="black">
+    <v-app-bar app  absolute class="black">
       <v-spacer>
         <router-link to="/" class="header_logo">
-        <img src="https://geospatialmedia.s3.amazonaws.com/wp-content/uploads/2016/12/ai_02.jpg">
+        <v-img src="@/assets/AISoftware.png" height="150px" width="150px">
+        </v-img>
       </router-link>
-      <router-link to="/" class="u-hover">AI Software Corporation</router-link>
+     
 
       </v-spacer>
-      <v-spacer absolute permanent right app dark class="black">
+      <v-spacer width="150px" right app dark class="black">
         <div class="black"> 
           <ul>
             <li>
@@ -105,23 +106,14 @@
           </ul>
         </div>
       </v-spacer>
-      <v-spacer>
-        <v-row justify="left">
-        <v-col md="auto">
-          <RegisterUser />
-           <Login />
-        </v-col>
-        <v-col>
-         
-        </v-col>
-      </v-row>
-      </v-spacer>
+      <v-spacer><RegisterUser /> </v-spacer>
+      <v-spacer><Login /> </v-spacer>
       <v-btn
-        href="https://github.com/AI-Software-Solutions/vuejs-samples/tree/master/ai-layout"
+        href="https://github.com/shobancs/vue-heroku-project"
         target="_blank"
         text
       >
-        <span class="mr-2 white--text">Code base</span>
+        <span class="mr-2 white--text">Code</span>
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
     </v-app-bar>
@@ -147,7 +139,7 @@
         justify="center"
       />
     </v-content>
-    <v-navigation-drawer absolute permanent right app  v-model="drawer"
+    <v-navigation-drawer  permanent right app  v-model="drawer"
          expand-on-hover  class="overflow-z-auto grey"
        >
       <template v-slot:prepend>
@@ -157,7 +149,7 @@
           </v-list-item-avatar>
 
           <v-list-item-content>
-            <v-list-item-title>Shoban Cheekuru</v-list-item-title>
+            <v-list-item-title>Guest</v-list-item-title>
             <v-list-item-subtitle>Logged In</v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
@@ -188,7 +180,7 @@
       <v-divider></v-divider>
     </v-navigation-drawer>
 
-    <v-footer absolute class="font-weight-medium grey">
+    <v-footer  absolute="" class="font-weight-medium grey">
       <Footer />
     </v-footer>
   </v-app>

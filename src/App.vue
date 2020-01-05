@@ -2,7 +2,10 @@
 <template>
   <v-app >
     
-
+<v-parallax
+    height="650"
+    src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg"
+  >
     <v-app-bar app  absolute class="black">
       <v-spacer>
         <router-link to="/" class="header_logo">
@@ -183,7 +186,9 @@
     <v-footer  absolute="" class="font-weight-medium grey">
       <Footer />
     </v-footer>
+</v-parallax>
   </v-app>
+  
 </template>
         
      

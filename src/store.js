@@ -7,7 +7,8 @@ export default {
   state: {
     fetched: false,
     users: [],
-    tweets: []
+    tweets: [],
+    repos: []
   },
 
   async fetch () {
@@ -21,7 +22,16 @@ export default {
     this.state.fetched = true
     ee.emit('api-fetch')
   },
-
+  async fetch () {
+    const data = await api.getGithubRepoData()
+  
+    if (data && data.length) {
+      this.setRepos(data)
+    }
+    
+    this.state.fetched = true
+    ee.emit('api-fetch')
+  },
   setTweets (tweets = []) {
     for (let i = 0; i < tweets.length; i++) {
       const userProfile = this.getRefineUser(tweets[i].userId)
@@ -33,6 +43,9 @@ export default {
   setUsers (users = []) {
     this.state.users = users
   },
+  setUsers (repos = []) {
+    this.state.repos = repos
+  },
 
   getTweets () {
     return this.state.tweets
@@ -40,6 +53,9 @@ export default {
 
   getUsers () {
     return this.state.users
+  },
+  getRepos () {
+    return this.state.repos
   },
 
   getRefineUser (userId = false) {

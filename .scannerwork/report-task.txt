@@ -1,0 +1,7 @@
+organization=vue-heroku
+projectKey=shobancs_vue-heroku-project
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.3982
+dashboardUrl=https://sonarcloud.io/dashboard?id=shobancs_vue-heroku-project
+ceTaskId=AW-aBaTSiuBMZXUk3OBn
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AW-aBaTSiuBMZXUk3OBn

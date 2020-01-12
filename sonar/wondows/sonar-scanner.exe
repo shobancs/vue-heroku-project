@@ -1,0 +1,6 @@
+sonar-scanner.bat \
+  -D"sonar.projectKey=shobancs_vue-heroku-project" \
+  -D"sonar.organization=vue-heroku" \
+  -D"sonar.sources=." \
+  -D"sonar.host.url=https://sonarcloud.io" \
+  -D"sonar.login=3cfd677ad3ab32f157022b32d1cd30d9644a1625"

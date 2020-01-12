@@ -258,7 +258,7 @@ export default {
     ],
     links: ["Home", "About Us", "Team", "Services", "Blog", "Contact Us"],
     
-    dialog: false,
+    dialog: true,
      mini: true,
      
   }),
@@ -272,7 +272,7 @@ export default {
       }
     },
     onScroll(e) {
-      this.offsetTop = e.target.scrollTop;
+      //this.offsetTop = e.target.scrollTop;
     }
   }
 };

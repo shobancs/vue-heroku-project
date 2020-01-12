@@ -71,13 +71,14 @@ export default {
     }),
     methods: {
       close: function () {
-        thisdialog = false
+        this.dialog = false
       },
       save: function () {
        // try {
           const data = JSON.stringify(this.propObj)
           alert(data);
-      this.$emit('close')
+        this.dialog = false
+          
          // let response = this.$http.post(`api/about/SaveUser`, 
            // this.propObj,
            
